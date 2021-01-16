@@ -1,14 +1,15 @@
 body {
   margin: 0px;
   padding: 0px;
+  width: 380px;
 }
 
 .search-panel{
   padding: 15px;
   background: rgb(1,104,214);
-  background: linear-gradient(90deg, rgba(1,104,214,1) 0%, rgba(47,129,245,1) 100%);  
+  background: linear-gradient(90deg, rgba(1,104,214,1) 0%, rgba(47,129,245,1) 100%);
 }
 
 .search-panel input{
-  width: 100%;
+  width: 300px;
 }
