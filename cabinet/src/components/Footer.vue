@@ -19,6 +19,7 @@ export default {
 .footer .info{
     padding: 30px;
     padding-top: 10px;
+    width: 230px;
 }
 .footer .title{
   padding-top: 20px;

@@ -8,13 +8,15 @@
           "id": 1,
           "name": "Google",
           "icon": "https://cdn.icon-icons.com/icons2/836/PNG/512/Google_icon-icons.com_66793.png",
-          "link": "https://google.com/"
+          "link": "https://google.com/",
+          "tags": ["goo", "google"]
         },
         {
           "id": 2,
           "name": "YouTube",
           "icon": "https://logos-world.net/wp-content/uploads/2020/04/YouTube-Emblem.png",
-          "link": "https://youtube.com/"
+          "link": "https://youtube.com/",
+          "tags": ["you", "google"]
         }
       ]
     },
@@ -26,19 +28,36 @@
           "id": 1,
           "name": "Facebook",
           "icon": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
-          "link": "http://facebook.com"
+          "link": "http://facebook.com",
+          "tags": ["goo", "google"]
         },
         {
           "id": 2,
           "name": "Twitter",
           "icon": "https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png",
-          "link": "http://twitter.com"
+          "link": "http://twitter.com",
+          "tags": ["tw", "twi"]
         },
         {
           "id": 3,
           "name": "GitHub",
           "icon": "icon",
-          "link": "http://facebook.com"
+          "link": "http://facebook.com",
+          "tags": ["github", "gh"]
+        },
+        {
+          "id": 4,
+          "name": "GitHub",
+          "icon": "icon",
+          "link": "http://facebook.com",
+          "tags": ["gooj", "google"]
+        },
+        {
+          "id": 5,
+          "name": "GitHub",
+          "icon": "icon",
+          "link": "http://facebook.com",
+          "tags": ["goo", "nada"]
         }
       ]
     }

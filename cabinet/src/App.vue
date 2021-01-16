@@ -1,10 +1,10 @@
 <template>
   <div class="">
     <div class="search-panel">
-      <SearchPanel />
+      <SearchPanel :topics="topics" />
     </div>
     <div class="topics">
-      <Topic v-for="topic in topics" :key="topic.id" :name="topic.name" :items="topic.items"/>
+      <Topic v-for="topic in topics" :key="topic.id" :name="topic.name" :items="topic.items.slice(0, 8)"/>
     </div>
     <div class="footer">
       <Footer :title="footer.title" :info="footer.info"/>
@@ -49,7 +49,7 @@ export default {
 }
 .topics {
   background-color: #edeff2;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 .footer {
   background-color: #edeff2;
