@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "My Tools Extension",
+  "version": "0.2",
+
+  "description": "Shows you useful links you've saved to",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "My Tools",
+    "default_popup": "index.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
