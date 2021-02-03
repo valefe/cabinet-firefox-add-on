@@ -1,12 +1,13 @@
 <template lang="html">
-  <div class="item" @click="goTo">
+  <div class="item tooltip" @click="goTo">
     <img :src="icon" alt="">
+    <span class="tooltiptext">{{name}}</span>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["id", "icon", "link"],
+  props: ["id", "icon", "link", "name"],
   methods: {
     goTo(){
       /*global browser*/

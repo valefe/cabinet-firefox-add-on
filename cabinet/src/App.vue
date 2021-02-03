@@ -40,6 +40,7 @@ export default {
 
 <style>
 #app {
+  width: 390px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,6 +54,7 @@ export default {
 }
 .footer {
   background-color: #edeff2;
+  padding: 20px;
   padding-bottom: 90px;
 }
 </style>

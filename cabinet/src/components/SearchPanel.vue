@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="search-panel">
-    <input v-model="searchText" type="text" name="" placeholder="Search..." @input="search">
+    <input v-on:keyup.enter="goFirst" id="search-input" v-model="searchText" type="text" name="" placeholder="Search..." @input="search">
     <div class="results">
       <Item v-for="item in results" :key="item.id" :id="item.id" :name="item.name" :icon="item.icon" :link="item.link"/>
     </div>
@@ -43,6 +43,9 @@ export default {
       return items_
     }
   },
+  mounted(){
+    document.getElementById("search-input").focus();
+  },
   methods:{
     search(){
       if (!this.searchText) {
@@ -50,12 +53,30 @@ export default {
         return;
       }
       var results_ = []
+      var results_names = []
+      this.results = []
       for (var item of this.taggedItems){
         if (item.tag.includes(this.searchText)){
-          results_.push(item.item)
+          console.log(item.item.name)
+          console.log(results_names)
+          console.log(results_)
+          console.log(this.results)
+          if (!results_names.includes(item.item.name)){
+            results_.push(item.item)
+            results_names.push(item.item.name)
+          }
         }
       }
       this.results = results_.slice(0,4)
+    },
+    goFirst(){
+      console.log("going to");
+      console.log(this.results[0].link)
+      console.log(this.results[0].target)
+      /*global browser*/
+      /*eslint no-undef: "error"*/
+      browser.runtime.sendMessage({link: this.results[0].link});
+      browser.browserAction.openPopup();
     }
   }
 }

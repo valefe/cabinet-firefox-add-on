@@ -5,6 +5,7 @@
     </div>
     <div class="info">
       {{ info }}
+      <span class="center">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span>
     </div>
   </div>
 </template>
@@ -17,9 +18,8 @@ export default {
 
 <style lang="css" scoped>
 .footer .info{
-    padding: 30px;
+    margin: 10px;
     padding-top: 10px;
-    width: 230px;
 }
 .footer .title{
   padding-top: 20px;

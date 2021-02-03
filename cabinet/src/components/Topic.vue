@@ -4,7 +4,7 @@
       {{ name }}
     </div>
     <div class="items">
-      <Item class="item" v-for="item in items" :key="item.id" :icon="item.icon" :link="item.link"/>
+      <Item class="item" v-for="item in items" :key="item.id" :name="item.name" :icon="item.icon" :link="item.link"/>
     </div>
   </div>
 </template>
@@ -22,7 +22,6 @@ export default {
 <style lang="css" scoped>
 .topic{
   padding-top: 10px;
-  position: relative;
 }
 .topic .title{
   margin-top: 6px;
